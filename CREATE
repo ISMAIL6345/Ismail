@@ -1,0 +1,1 @@
+Create Table EMPLOYEEREGISTRY (EmployeeIDPK Int(PrimaryKey),EmployeeName Varchar(Max),EmployeeName Varchar(MAx),Age int,Gender Varchar(max))
