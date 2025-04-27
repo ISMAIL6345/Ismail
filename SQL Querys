@@ -1,1 +1,54 @@
-Create Table EMPLOYEEREGISTRY (EmployeeIDPK Int(PrimaryKey),EmployeeName Varchar(Max),EmployeeName Varchar(MAx),Age int,Gender Varchar(max))
+----------------------------------------Drop & Create Query----------
+Drop table UserRegistry
+
+Create Table UserRegistry(
+UserID_ID Int IDENTITY(1,1) PRIMARY KEY,
+UserName Varchar(max),
+UserEmail Varchar(max),
+Age int,
+UserNewPass Varchar(max),
+UserOldPass Varchar(max),
+Remarks Varchar(max)
+)
+
+---Manually Sequence ID
+Create Table UserRegistry(
+UserID_ID Int  NOT NULL Primary key,
+UserName Varchar(max),
+UserEmail Varchar(max),
+Age int,
+UserNewPass Varchar(max),
+UserOldPass Varchar(max),
+Remarks Varchar(max)
+)
+
+----------------------------------------Inser Query
+INSERT INTO [dbo].[UserRegistry]
+           ([UserName]
+           ,[UserEmail]
+           ,[Age]
+           ,[UserNewPass]
+           ,[UserOldPass]
+           ,[Remarks])
+     VALUES
+           ('Ismail','mr.mohamedismail6@gmail.com',28,'12345678','12345678',null)
+
+---Manually Sequence ID
+INSERT INTO [dbo].[UserRegistry]
+           ([UserID_ID]
+           ,[UserName]
+           ,[UserEmail]
+           ,[Age]
+           ,[UserNewPass]
+           ,[UserOldPass]
+           ,[Remarks])
+     VALUES
+           (15,'Ismail','mr.mohamedismail6@gmail.com',28,'12345678','12345678',null)
+
+
+----------------------------------------Select Query-------------
+Select * from UserRegustry
+
+Select UserName from UserRegistry
+
+
